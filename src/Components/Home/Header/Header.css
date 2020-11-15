@@ -1,0 +1,17 @@
+.header{
+    background: url(../../../Image/header-bg-1.png);
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.header::before{
+  content: '';
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}

@@ -1,0 +1,16 @@
+.footer{
+    background-color: #171426;
+    padding: 70px 0px 20px 0px;
+    color: white;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight:bold;
+    color: white;
+}
+.navbar-brand .brand-highlight{
+    color: #FCD842;
+}
+.navbar-brand:hover, .navbar-nav .nav-item .nav-link:hover{
+    color: white;
+}

@@ -1,0 +1,25 @@
+.training-program{
+    padding-bottom: 100px;
+}
+.training-box{
+    width: 100%;
+    height: 380px;
+    position: relative;
+}
+.train-content{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    background-color: #FCD842;
+    width: 70%;
+    height: 70px;
+    color: #171426;
+    font-weight: bold;
+}
+.train-content h4{
+    margin-left: 20px;
+}
+.train-content:hover{
+    width:100%;
+    transition:  width 1s ease-in-out;
+}

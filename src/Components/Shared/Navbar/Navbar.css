@@ -1,0 +1,28 @@
+.navbar{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.navbar .navbar-toggler .navbar-toggler-icon{
+    color: white !important;
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+    font-weight:bold;
+    color: white;
+}
+.navbar .navbar-brand .brand-highlight{
+    color: #FCD842;
+}
+.navbar .navbar-brand:hover, .navbar-nav .nav-item .nav-link:hover{
+    color: white;
+}
+.navbar-nav .nav-item{
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: white;
+    font-weight: normal;
+}
