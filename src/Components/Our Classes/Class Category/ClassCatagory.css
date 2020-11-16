@@ -1,0 +1,8 @@
+.class-category-style{
+    margin: 40px auto;
+    text-align: center;
+    display: block;
+    min-height: 500px;
+    overflow: scroll;
+    scrollbar-width: none;
+}

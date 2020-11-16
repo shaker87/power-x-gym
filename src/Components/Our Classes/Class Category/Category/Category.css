@@ -1,0 +1,23 @@
+.category-card{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    float: left;
+    margin: 8px 10px;
+}
+.category-img-style{
+    width: 100%;
+    height: 90%;
+}
+.category-name-style{
+    text-align: center;
+    position: absolute;
+    top: 83%;
+    left: 6%;
+    right: 0;
+    background-color: #FCD842;
+    width: 90%;
+    height: 50px;
+    padding: 10px 4px;
+    color: #171426;
+}
