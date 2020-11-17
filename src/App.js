@@ -20,7 +20,9 @@ function App() {
           </Route>
           <Route path='/ourClasses'>
             <OurClass></OurClass>
-            <ClassDetails></ClassDetails>
+          </Route>
+          <Route path='/course/:courseId'>
+          <ClassDetails></ClassDetails>
           </Route>
           <Route path='*'>
             <NotFound></NotFound>
