@@ -4,8 +4,14 @@ import training1 from '../../../Image/training1.png';
 import training2 from '../../../Image/training2.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { useHistory } from 'react-router-dom';
 
 const TrainingProgram = () => {
+    const history = useHistory();
+    const trainingBtn = () => {
+        history.push("/class-details")
+    }
+
     return (
         <section className="training-program">
             <div className="container">
@@ -25,7 +31,7 @@ const TrainingProgram = () => {
                     <div className="col-md-6">
                         <div className="training-box">
                             <img className="img-fluid" style={{height: '380px', width: '100%'}} src={training2} alt="" srcset="" />
-                            <div className="train-content d-flex align-items-center">
+                            <div onClick={trainingBtn} className="train-content d-flex align-items-center">
                                 <h4>CARDIO TRAINING SESSION</h4>
                                 <FontAwesomeIcon className="ml-4" icon={faArrowRight} />
                             </div>
