@@ -1,9 +1,14 @@
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import './PricingCategoryDetails.css';
 
 const PricingCategoryDetails = ({ pricePlan }) => {
+    const history = useHistory();
+    const goToForm = () => {
+        history.push("/membership")
+    }
     return (
         <div className="col-md-4">
             <div className="price-box">
@@ -16,7 +21,7 @@ const PricingCategoryDetails = ({ pricePlan }) => {
                         pricePlan.facility.map(facilities => <li style={{ listStyle: 'none', paddingBottom: '10px' }}><FontAwesomeIcon className="mr-2" icon={faCheck} />{facilities}</li>)
                     }
 
-                    <button className="custom-button mt-5">PURCHASE</button>
+                    <button onClick={goToForm} className="custom-button mt-5">PURCHASE</button>
                 </div>
             </div>
         </div>
