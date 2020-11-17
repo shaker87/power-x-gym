@@ -1,17 +1,5 @@
 import React from 'react';
-import { useHistory, useParams } from 'react-router-dom';
-import fakeService from '../../fakeService/fakeService';
 
-import './CourseDetails.css';
-
-const CourseDetails = () => {
-    const history = useHistory();
-    const {courseId} = useParams();
-    const course = fakeService.find(service=> service.id === courseId);
-    // console.log(course)
-    const selectSchedule = () => {
-        history.push("/price-plan")
-    }
     return (
         <div className="container">
             <div className='row course-details-style'>
@@ -56,7 +44,7 @@ const CourseDetails = () => {
                     <p style={{color: 'yellow'}}>10.00am-11.00am</p>
                     </div>
                     </div>
-                    <button onClick={selectSchedule} className='custom-button button-position'>Join Us</button>
+
             </div>
             
         </div>
