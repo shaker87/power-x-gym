@@ -1,8 +1,13 @@
 import React from 'react';
 import './HeaderMain.css';
 import ReactPlayer from 'react-player';
+import { useHistory } from 'react-router-dom';
 
 const HeaderMain = () => {
+    const history = useHistory();
+    const joinBtn = () => {
+        history.push("/our-class")
+    }
     return (
         <div className="header-main">
             <div className="container">
@@ -13,7 +18,7 @@ const HeaderMain = () => {
                             <p>Lorem, ipsum dolor sit amet consectetur. Doloribus reprehenderit, 
                             ex, cumque animi iste unde explicabo accusamus, veritatis sequi neque
                             doloremque officia dolorum? Et debitis excepturi quisquam atque at sed.</p>
-                            <button className="custom-button">JOIN US</button>
+                            <button onClick={joinBtn} className="custom-button">JOIN US</button>
                         </div>
                     </div>
                     <div className="col-md-6">

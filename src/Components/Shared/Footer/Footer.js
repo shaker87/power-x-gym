@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
                 <div className="row">
                     <div className="col-md-12 text-center mt-5">
-                        <h6>&copy;2020 by shaker hossain</h6>
+                        <h6>&copy;{new Date().getFullYear} by shaker hossain</h6>
                     </div>
                 </div>
             </div>
