@@ -3,5 +3,24 @@
 }
 .course-img-style{
     width: 100%;
-
+    height: 400px;
+}
+.schedule-style{
+    box-shadow: 2px 2px 5px 3px grey;
+    margin: 10px;
+    width: 200px;
+    height: 70px;
+    padding: 2px;
+}
+.list-style li{
+    list-style-image: url(https://i.ibb.co/ry00thM/checkmark-square-2.png);
+    font-weight: bold;
+}
+.second-column{
+    position: relative;
+}
+.button-position{
+    position: absolute;
+    bottom:0;
+    right: 0;
 }
