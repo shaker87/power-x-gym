@@ -1,11 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import fakeService from '../../fakeService/fakeService';
-import './CourseDetails.css';
 
-const CourseDetails = () => {
-    const {courseId} = useParams();
-    const course = fakeService.find(service=> service.id === courseId);
     return (
         <div className="container">
             <div className='row course-details-style'>
@@ -50,7 +44,7 @@ const CourseDetails = () => {
                     <p style={{color: 'yellow'}}>10.00am-11.00am</p>
                     </div>
                     </div>
-                    <button className='custom-button button-position'>Join Us</button>
+
             </div>
             
         </div>
